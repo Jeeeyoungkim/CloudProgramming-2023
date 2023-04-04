@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="ko">
 <head>
@@ -15,5 +17,6 @@
         <h4>{{ post.created_at }}</h4>
         <p>{{ post.content }}</p>
     {% endfor %}
+    <img src="{% static "/images/sample.jpeg" %}">
 </body>
 </html>

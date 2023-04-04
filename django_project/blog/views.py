@@ -8,10 +8,10 @@ def index(request):
     posts = Post.objects.all().order_by('-pk')
 
     return render(
-        request, 'blog/index.html', {'posts': posts})
+        request, 'blog/post_list.html', {'posts': posts})
 
 def single_post_page(request, post_num):
     post = Post.objects.get(pk=post_num)
 
-    return render(request, 'blog/single_post_page.html', {
+    return render(request, 'blog/post_detail.html', {
         'post': post})
