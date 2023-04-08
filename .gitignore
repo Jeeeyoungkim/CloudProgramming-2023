@@ -103,12 +103,12 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+.myenv
 env/
-venv/
+myvenv/
 ENV/
 env.bak/
-venv.bak/
+myenv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pycharm files
+.idea/
+
+# Django files
+migrations/
+
+# media
+django_project/_media
